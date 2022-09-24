@@ -3,6 +3,10 @@ package app;
 public class Main {
 
     public static void main(String[] args) {
+
+        showResults();
+    }
+    private static void showResults() {
         System.out.println("My app for Users!");
         System.out.println("Version 1.0");
         int a = 8;
@@ -16,17 +20,16 @@ public class Main {
         int f = division(a, b);
         System.out.println(f);
     }
-
     private static int add(int a, int b) {
         return a + b;
     }
-
     private static int multiply(int a, int b) {
         return a * b;
     }
-
-    private static int subtraction(int a, int b) {return a - b; }
-
-    private static int division(int a, int b) { return a / b; }
-
+    private static int subtraction(int a, int b) {
+        return a - b;
     }
+    private static int division(int a, int b) {
+        return a / b;
+    }
+}
